@@ -1,0 +1,64 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.noa{
+  text-decoration: none;
+  color: black;
+}
+
+.reducirImg{
+  max-width: 25%;
+}
+
+.redesLista{
+  list-style: none;
+}
+
+.redesLista li a{
+  background-color: skyblue;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.control{
+  width: 100%;
+}
+
+nav{
+  width: 80%;
+  text-align: center;
+}
+
+.menu-item{
+  padding: 15px;
+  background-color: cadetblue;
+  max-width: 15%;
+  list-style: none;
+}
+
+.menu-item a{
+  
+}
+
+.menu-item:hover{
+  background-color: slateblue;
+}
+
+.menu-item:hover a{
+  color: white;
+}
+
+.contenedor{
+  max-width: 90%;
+  background-color: green;
+}
+
+.cat-item:hover{
+  color: azure;
+}
+
+.categorias li{
+  list-style: none;
+}
