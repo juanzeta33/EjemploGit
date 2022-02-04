@@ -2,28 +2,55 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header{
+  background-color: #681a5d;
+  overflow: hidden;
+}
+
 .noa{
   text-decoration: none;
   color: black;
 }
 
 .reducirImg{
-  max-width: 25%;
+  max-width: 50%;
+  width: 50%;
+}
+
+.icon{
+  width: 15px;
+}
+
+.leftF{
+  float: left;
+}
+
+.rightF{
+  float: right;
 }
 
 .redesLista{
   list-style: none;
+  clear: both;
+  overflow: hidden;
 }
 
 .redesLista li a{
-  background-color: skyblue;
   padding: 5px;
   margin: 10px;
   border-radius: 10px;
+  color: white;
+  font-size: 25px;
 }
 
 .control{
-  width: 100%;
+  width: 95%!important;
+  max-width: 95%!important;
 }
 
 nav{
@@ -33,17 +60,17 @@ nav{
 
 .menu-item{
   padding: 15px;
-  background-color: cadetblue;
+  background-color: #681a5d;
   max-width: 15%;
   list-style: none;
 }
 
 .menu-item a{
-  
+  color: white;
 }
 
 .menu-item:hover{
-  background-color: slateblue;
+  background-color: #57167e;
 }
 
 .menu-item:hover a{
@@ -62,4 +89,38 @@ nav{
 .categorias li{
   list-style: none;
 }
-/*  ESTOY CAMBIANDO*/
+
+.clearfix{
+  clear: both;
+}
+
+.w-100{
+  max-width: 100%!important;
+  width: 100%;
+}
+
+.w-75{
+  max-width: 74%!important;
+  width: 99%;
+}
+
+.w-25{
+  max-width: 24%!important;
+  width: 99%;
+}
+
+.ml-5{
+  margin-left: 25px;
+}
+
+.mr-5{
+  margin-right: 25px;
+}
+
+nav{
+  background-color: #57167e;
+}
+
+nav ul{
+  overflow: hidden ;
+}
