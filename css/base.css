@@ -2,6 +2,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.hamMenu{
+  display: none;
+}
+
 body{
   max-width: 90%;
   margin: 0 auto;
@@ -10,6 +14,7 @@ body{
 header{
   background-color: #681a5d;
   overflow: hidden;
+  width: 100%;
 }
 
 .noa{
@@ -78,7 +83,7 @@ nav{
 }
 
 .contenedor{
-  max-width: 90%;
+  max-width: 100%;
   background-color: green;
 }
 
@@ -123,4 +128,31 @@ nav{
 
 nav ul{
   overflow: hidden ;
+}
+
+.filtros, .listaProductos{
+  float: left;
+}
+
+.filtros{
+  width: 19%;
+}
+
+.listaProductos{
+  width: 80%;
+  border: 1px solid gainsboro;
+}
+
+footer{
+  clear: both;
+  background-color:mistyrose;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.producto{
+  
+  float: left;
+  width: 23%;
+  padding: 5px;
 }

@@ -1,0 +1,74 @@
+@media(max-width:850px){
+  header{
+    text-align: center;
+  }
+
+  .logoResponsive{
+    width: 75%;
+    max-width: 100%!important;
+  }
+
+  .filtros{
+    display: none;
+  }
+
+  .producto{
+    width: 45%;
+  }
+
+  .listaProductos{
+    width: 100%;
+  }
+
+  .redesLista li{
+    text-align: center;
+  }
+
+  .redesLista li a{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .redesBusqueda{
+    width: 100%;
+    max-width: 100%!important;
+  }
+
+  .busqueda{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+
+@media (max-width:400px){
+
+  .producto{
+    width: 100%;
+  }
+
+  /*.menu li{
+    position: absolute;
+    z-index: 100;
+  }
+  
+  .menu{
+    position: relative;
+    display: none;
+  }
+
+  nav ul li{
+    width: 100%;
+  }
+
+  .hamMenu{
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+
+  .hamMenu:hover .menu{
+    display: block;
+  }*/
+}
