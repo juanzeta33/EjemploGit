@@ -62,44 +62,48 @@
         <h3>Rango de Precios</h3>
         <section>
           <label for="">0$</label>
-          <input type="range" name="" min="0" max="250" id="">
+          <input type="range" id="rangoPrecios" min="0" max="250">
           <label for="">250$</label>
         </section>
       </section>
       <section>
         <h3>Marcas</h3>
         <section>
-          <input type="checkbox" name="marca" id="">
+          <input type="checkbox" name="marca" value="Rimith">
           <label for="">Rimith</label>
           <br>
-          <input type="checkbox" name="marca" id="">
+          <input type="checkbox" name="marca" value="Bonlac">
           <label for="">Bonlac</label>
           <br>
-          <input type="checkbox" name="marca" id="">
+          <input type="checkbox" name="marca" value="Estrella Azul">
           <label for="">Estrella Azul</label>
           <br>
-          <input type="checkbox" name="marca" id="">
+          <input type="checkbox" name="marca" value="Toledano">
           <label for="">Toledano</label>
           <br>
-          <input type="checkbox" name="marca" id="">
+          <input type="checkbox" name="marca" value="Melo">
           <label for="">Melo</label>
         </section>
       </section>
       <section>
         <h3>Tipo de entrega</h3>
         <section>
-          <input type="radio" name="venta" id="">
+          <input type="radio" name="venta" value="Casa">
           <label for="">Entrega en casa</label>
           <br>
-          <input type="radio" name="venta" id="">
+          <input type="radio" name="venta" value="Recojo" checked>
           <label for="">Recoger en tienda</label>
           <br>
-          <input type="radio" name="venta" id="">
+          <input type="radio" name="venta" value="Linea">
           <label for="">Compra en linea</label>
         </section>
       </section>
+      <button class="btn" onclick="Filtrar()">Filtrar</button>
     </section>
     <section class="listaProductos">
+      <section class="filtroActivo">
+        <h4>Filtros activos: <span id="filtrosActivos"></span></h4>
+      </section>
       <section class="producto">
         <img src="" alt="">
         <h2>PRODUCTO</h2>
@@ -129,6 +133,8 @@
   <footer>
     <H6> Preparado por Juan Zamora </H6>
   </footer>
+
+  <script src="js/proceso.js"></script>
 </body>
 
 </html>

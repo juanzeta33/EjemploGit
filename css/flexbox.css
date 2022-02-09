@@ -1,3 +1,11 @@
+:root{
+  --backgrouncolor-caja : #f4f4f4;
+  --backgrouncolor-secundario : #6e6e79;
+  --fuente-titulo-general: 25px;
+  --margin-standard : 25px;
+  --primary-color : #681a5d;
+}
+
 *{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -28,8 +36,8 @@
   padding: 5px;
   margin: 10px;
   border-radius: 10px;
-  color: white;
-  font-size: 25px;
+  color: black;
+  font-size: var(--fuente-titulo-general);
 }
 
 .redesLista{
@@ -43,11 +51,11 @@ header{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  background-color: brown;
+  background-color: var(--backgrouncolor-caja);
 }
 
 nav{
-  background-color: #681a5d;
+  background-color: var(--primary-color);
 }
 
 .menu{
@@ -83,13 +91,48 @@ nav{
 
 .filtros{
   flex-basis: 27%;
-  background-color: aqua;
+  background-color: var(--backgrouncolor-caja);
+}
+
+.btn{
+  padding: var(--margin-standard);
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: #f4f4f4;
+  border: 1px solid var(--primary-color);
+  width: 100%;
+}
+
+.btn:hover{
+  background-color: #57167e;
 }
 
 .listaProductos{
   flex-basis: 77%;
-  background-color: yellow;
+  background-color: var(--backgrouncolor-caja);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.filtroActivo{
+  width:100%;
+  height: auto;
+  background-color: var(--backgrouncolor-secundario);
+}
+
+.filtroActivo h4{
+  margin: var(--margin-standard);
+}
+
+footer{
+  display: flex;
+  background-color: var(--backgrouncolor-caja);
+  justify-content: center;
+}
+
+footer h6{
+  font-size: var(--fuente-titulo-general);
 }
