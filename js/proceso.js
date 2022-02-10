@@ -14,3 +14,25 @@ function Filtrar() {
     'Marcas activas =>  ' + cadenaMarcas + '<br>' +
     'Tipo de entrega => ' + filtroEntrega;
 }
+
+function CargarProductos() {
+
+  var renderProducto = document.getElementById('renderProductos');
+  var template = "";
+  fetch('http://192.168.100.16:8000/api/productos')
+    .then(res => {
+      if (res.ok) {
+        res.json().then(productos => {
+          productos.forEach(prod => {
+            template += '<section class="producto">' +
+              '<img class="imgProducto" src="' + prod.foto + '" alt="">' +
+              '<h2>' + prod.nombre + '</h2>' +
+              '<p class="pDesc">' + prod.descripcion + '</p>' +
+              '<button>Comprar</button>' +
+              '</section>'
+          })
+          renderProducto.innerHTML = template;
+        })
+      }
+    }).catch(err => console.log(err));
+}

@@ -136,3 +136,31 @@ footer{
 footer h6{
   font-size: var(--fuente-titulo-general);
 }
+
+#frmProducto{
+  width: 100%;
+}
+
+#frmProducto fieldset{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.imgProducto{
+  width: 75%;
+}
+
+#renderProductos{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pDesc{
+  max-width: 100%;
+}
+
+.producto{
+  width: 24%;
+}

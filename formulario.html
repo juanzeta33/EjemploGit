@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendo Todo</title>
+  <!--COMENTAR Y DESCOMENTAR DEPENDIENDO DEL DISENO QUE DESEA VER-->
+  <!--link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/responsive.css"-->
+
+  <link rel="stylesheet" href="css/flexbox.css">
+</head>
+
+<body>
+  <header>
+    <section class="leftF w-25 ml-5 logoResponsive">
+      <img class="reducirImg " src="img/logo.jpg" alt="">
+    </section>
+
+    <section class="leftF w-75 redesBusqueda">
+      <section>
+        <ul class="redesLista mr-5">
+          <li class="rightF"><a class="noa" href="https://facebook.com">FB</a></li>
+          <li class="rightF"><a class="noa" href="">TW</a></li>
+          <li class="rightF"><a class="noa" href="">IG</a></li>
+        </ul>
+      </section>
+      <section class="busqueda">
+        <span class="leftF"><img class="icon" src="https://image.flaticon.com/icons/png/512/64/64673.png" alt=""></span>
+        <input class="leftF control" type="text" name="busqueda" id="" placeholder="Realizar una busqueda">
+      </section>
+    </section>
+
+  </header>
+  <nav class="clearfix w-100">
+    <ul class="menu">
+      <li class="menu-item leftF"><a class="noa" href="index.html">Home</a></li>
+      <li class="menu-item leftF"><a class="noa" href="formulario.html">Formulario de Registro</a></li>
+      <li class="menu-item leftF"><a class="noa" href="">Menu3</a></li>
+      <li class="menu-item leftF"><a class="noa" href="">Menu4</a></li>
+    </ul>
+    <img class="hamMenu"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+      alt="">
+  </nav>
+  <section class="contenedor clearfix">
+    <form action="" id="frmProducto" onsubmit="return EnviarFormulario(event)">
+      <fieldset>
+        <legend>Datos Generales</legend>
+        <section>
+          <label for="">Nombre del producto</label><br>
+          <input type="text" name="" id="nombre_producto">
+        </section>
+        <section>
+          <label for="">Descripcion del producto</label><br>
+          <input type="text" name="" id="descripcion_producto">
+        </section>
+        <section>
+          <label for="">URL de la fot del producto</label><br>
+          <input type="url" name="" id="foto_producto">
+        </section>
+      </fieldset>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+  <section>
+    <button onclick="ObtenerDatos()" class="btn">Cargar Tablas</button>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NOMBRE</th>
+          <th>PRODUCTO</th>
+          <th>FOTO</th>
+          <th>FECHA CREACION</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpoTabla">
+
+      </tbody>
+    </table>
+  </section>
+  <footer>
+    <H6> Preparado por Juan Zamora </H6>
+  </footer>
+  <script src="js/formulario.js"></script>
+</body>
+
+</html>

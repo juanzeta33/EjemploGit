@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/flexbox.css">
 </head>
 
-<body>
+<body onload="CargarProductos()">
   <header>
     <section class="leftF w-25 ml-5 logoResponsive">
       <img class="reducirImg " src="img/logo.jpg" alt="">
@@ -36,8 +36,8 @@
   </header>
   <nav class="clearfix w-100">
     <ul class="menu">
-      <li class="menu-item leftF"><a class="noa" href="">Menu1</a></li>
-      <li class="menu-item leftF"><a class="noa" href="">Menu2</a></li>
+      <li class="menu-item leftF"><a class="noa" href="index.html">Home</a></li>
+      <li class="menu-item leftF"><a class="noa" href="formulario.html">Formulario de Registro</a></li>
       <li class="menu-item leftF"><a class="noa" href="">Menu3</a></li>
       <li class="menu-item leftF"><a class="noa" href="">Menu4</a></li>
     </ul>
@@ -104,29 +104,8 @@
       <section class="filtroActivo">
         <h4>Filtros activos: <span id="filtrosActivos"></span></h4>
       </section>
-      <section class="producto">
-        <img src="" alt="">
-        <h2>PRODUCTO</h2>
-        <p>Descripcion</p>
-        <button>Comprar</button>
-      </section>
-      <section class="producto">
-        <img src="" alt="">
-        <h2>PRODUCTO</h2>
-        <p>Descripcion</p>
-        <button>Comprar</button>
-      </section>
-      <section class="producto">
-        <img src="" alt="">
-        <h2>PRODUCTO</h2>
-        <p>Descripcion</p>
-        <button>Comprar</button>
-      </section>
-      <section class="producto">
-        <img src="" alt="">
-        <h2>PRODUCTO</h2>
-        <p>Descripcion</p>
-        <button>Comprar</button>
+      <section id="renderProductos">
+
       </section>
     </section>
   </section>
