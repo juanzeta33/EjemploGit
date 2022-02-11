@@ -14,9 +14,11 @@ function EnviarFormulario(e) {
   let opciones = {
     method: 'POST',
     body: JSON.stringify(producto),
-    mode: 'no-cors',
+    mode: 'cors',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      'X-Requested-With': 'XMLHttpRequest'
     }
   };
 
